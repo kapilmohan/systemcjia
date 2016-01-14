@@ -1,4 +1,6 @@
 class SurveyController < ApplicationController
+	require 'net/http'
+
 	def index
 		#Has to be moved elsewhere
 		@survey_user = "kapilonweb@gmail.com"
