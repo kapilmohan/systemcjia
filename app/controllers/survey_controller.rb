@@ -3,8 +3,10 @@ class SurveyController < ApplicationController
 
 	def index
 		#Has to be moved elsewhere
-		@survey_user = "kapilonweb@gmail.com"
-		@survey_password = "2zKIAoLjgYSm"
+		# @survey_user = "kapilonweb@gmail.com"
+		# @survey_password = "2zKIAoLjgYSm"
+		@survey_user = "jonathanboutelle@gmail.com"
+		@survey_password = "Wecando1t2"
 		@api_root_uri = "https://fluidsurveys.com:80/api/v3"
 
 		# if user is not logged in then send them to login page (login#index)
