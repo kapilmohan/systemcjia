@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   database: systemicjia_production
-  username: bd5018fc416769
-  password: 02d1c6bb
+  username: b18b1998e12955
+  password: d834b75d
   host: us-cdbr-iron-east-03.cleardb.net
