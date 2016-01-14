@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: systemicjia_production
-  username: magento
-  password: magento
+  username: bd5018fc416769
+  password: 02d1c6bb
+  host: us-cdbr-iron-east-03.cleardb.net
