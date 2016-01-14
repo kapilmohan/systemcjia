@@ -22,6 +22,6 @@ class SurveyController < ApplicationController
 		}.body
 		response_json = JSON.parse(api_response)
 
-		@survey_link = response_json["deploy_url"].to_s + "?rid=#{@user[:id]}&remail=#{@user[:email]}"
+		@survey_link = response_json["deploy_url"].nil? ? "#" : response_json["deploy_url"].to_s + "?rid=#{@user[:id]}&remail=#{@user[:email]}"
 	end
 end
