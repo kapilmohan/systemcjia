@@ -26,4 +26,13 @@ class SurveyController < ApplicationController
 
 		@survey_link = response_json["deploy_url"].nil? ? "#" : response_json["deploy_url"].to_s + "?rid=#{@user[:id]}&remail=#{@user[:email]}"
 	end
+
+	def captureresponse
+		file = "#{Rails.root}/public/responses/data.txt"
+		File.open(file, "w") do |f|
+			f.write("Jorse #{Time.now}\n\n")
+			f.write(params.to_s + "\n\nOK")
+		end
+
+	end
 end

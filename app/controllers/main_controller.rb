@@ -6,7 +6,5 @@ class MainController < ApplicationController
 
 		# assuming user is logged in
 		@user = { :id => 123, :email => "superhero@gmail.com", :name => "John Doe" }
-
-		
 	end
 end
