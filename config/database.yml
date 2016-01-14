@@ -49,7 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: systemicjia_production
+  database: heroku_45c86db2b20f706
   username: b18b1998e12955
   password: d834b75d
   host: us-cdbr-iron-east-03.cleardb.net
